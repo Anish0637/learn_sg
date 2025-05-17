@@ -5,7 +5,8 @@
 # export SCRIPT_PATH=train.py
 # export INSTANCE_TYPE= #the instance size you want to use, i.e., ml.m5.large
 
-export SG_ROLE=sg_maker_user_role # A typical AWS SageMaker execution role ARN
+#export SG_ROLE=sg_maker_user_role # A typical AWS SageMaker execution role ARN
+export SG_ROLE=ml_user
 export WORK_DIRECTORY="./data" # Relative path to a 'data' directory within your project folder
 export PREFIX="vscode-ml-project-v1" # A descriptive prefix for your S3 artifacts
 export FRAMEWORK_VERSION="1.2-1" # A specific version for scikit-learn, TensorFlow, PyTorch, etc.
