@@ -128,5 +128,6 @@ if __name__ == "__main__":
     test_data = gen_test_data()
     serve_model(model_data, test_data)
     # model_data = {"model_path": "s3://sagemaker-us-east-1-116981783207 /sagemaker-scikit-learn-2023-01-08-18-35-09-467/output/model.tar.gz"}
-    model_data = {"model_path": "s3://sagemaker-us-west-2-116981783207/sagemaker-scikit-learn-2025-05-17-07-12-33-587/output/model.tar.gz"} 
+    #model_data = {"model_path": "s3://sagemaker-us-west-2-116981783207/sagemaker-scikit-learn-2025-05-17-07-12-33-587/output/model.tar.gz"}
+    model_data = {"model_path": "s3://sagemaker-us-east-2-116981783207/sagemaker-scikit-learn-2025-05-17-09-48-01-030/output/"} 
     serve_saved_model(model_data, test_data)
