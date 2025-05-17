@@ -108,7 +108,7 @@ def serve_model(model_data, test_data):
     )
     print(predictor.predict(test_data["test_X"].values))
     print(test_data["test_y"].values)
-    # predictor.delete_endpoint()
+    predictor.delete_endpoint()
 
 def serve_saved_model(model_data, test_data):
     sklearn_model = SKLearnModel(model_data=model_data['model_path'],
@@ -118,7 +118,7 @@ def serve_saved_model(model_data, test_data):
     predictor = sklearn_model.deploy(instance_type=INSTANCE_TYPE, initial_instance_count=1)
     print(predictor.predict(test_data["test_X"].values))
     print(test_data["test_y"].values)
-    # predictor.delete_endpoint()
+    predictor.delete_endpoint()
 
 
 if __name__ == "__main__":
